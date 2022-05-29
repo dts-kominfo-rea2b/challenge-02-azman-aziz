@@ -23,8 +23,17 @@ function lakukanLooping(arrPegawai) {
       yang berisi gabungan nama depan dan belakang dari masing masing pegawai
 
       Contoh: ["Aisyah Nirmala", "Mansur Faisal", ...]
+
+      
   */
-      let hasilLooping = [];
+
+      let hasilLooping= dataYangAkanDilooping.map(fullName);
+      
+      function fullName(item){
+        return item.namaDepan + " " + item.namaBelakang;
+       
+      }
+      
 
       // for (let i = 0; i < dataYangAkanDilooping.length; i++) {
       //   hasilLooping.push(dataYangAkanDilooping[i]);
@@ -43,9 +52,9 @@ function lakukanLooping(arrPegawai) {
 //     hasilLooping = array.map(hasilLooping);
 //  }
  
-  for (let i = 0; i < dataYangAkanDilooping.length; i++) {
-    hasilLooping  += dataYangAkanDilooping[i].namaDepan + " " + dataYangAkanDilooping[i].namaBelakang;
-  }
+  // for (let i = 0; i < dataYangAkanDilooping.length; i++) {
+  //   hasilLooping  += dataYangAkanDilooping[i].namaDepan.concat(dataYangAkanDilooping[i].namaBelakang);
+  // }
   
 
   /*
