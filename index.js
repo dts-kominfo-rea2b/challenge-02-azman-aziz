@@ -24,15 +24,28 @@ function lakukanLooping(arrPegawai) {
 
       Contoh: ["Aisyah Nirmala", "Mansur Faisal", ...]
   */
-      let hasilLooping = "";
+      let hasilLooping = [];
 
- for( const data in dataYangAkanDilooping ){
-    hasilLooping += dataYangAkanDilooping[data].namaDepan + " " + dataYangAkanDilooping[data].namaBelakang ;
- }
+      // for (let i = 0; i < dataYangAkanDilooping.length; i++) {
+      //   hasilLooping.push(dataYangAkanDilooping[i]);
+      // }
+  
+      
+  
+      // dataYangAkanDilooping.forEach((hasilLooping) => {
+      //   hasilLooping = hasilLooping.namaDepan + " " + hasilLooping.namaBelakang;
+      // });
+      
+
+
+//  for( const data in dataYangAkanDilooping ){
+//     hasilLooping += dataYangAkanDilooping[data].namaDepan + " " + dataYangAkanDilooping[data].namaBelakang ;
+//     hasilLooping = array.map(hasilLooping);
+//  }
  
-  // for (let i = 0; i < dataYangAkanDilooping.length; i++) {
-  //  var hasil  = dataYangAkanDilooping[i].namaDepan + " " + dataYangAkanDilooping[i].namaBelakang;
-  // }
+  for (let i = 0; i < dataYangAkanDilooping.length; i++) {
+    hasilLooping  += dataYangAkanDilooping[i].namaDepan + " " + dataYangAkanDilooping[i].namaBelakang;
+  }
   
 
   /*
